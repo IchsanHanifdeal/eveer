@@ -19,7 +19,7 @@ const Aside = () => {
         { i: LuLayoutDashboard, t: 'Dashboard', h: '/dashboard', a: 0, c: ['user', 'panitia', 'admin'] },
         { i: LuPlaySquare, t: 'Events', h: '/dashboard/events', a: 0, c: ['panitia', 'admin'] },
         { i: LuWallet, t: 'Income', h: '/dashboard/income', a: 0, c: ['panitia', 'admin'] },
-        { i: LuScrollText, t: 'Prediksi', h: '/dashboard/prediksi', a: 0, c: ['panitia', 'admin'] },
+        // { i: LuScrollText, t: 'Prediksi', h: '/dashboard/prediksi', a: 0, c: ['panitia', 'admin'] },
         { i: LuUsers2, t: 'Management', h: '/dashboard/manajemen-user', a: 0, c: ['admin'] },
       ]
     },
@@ -28,7 +28,7 @@ const Aside = () => {
       list: [
         { i: LuUser2, t: 'Profile', h: '/dashboard/profile', a: 0, c: ['user', 'panitia', 'admin'] },
         { i: LuLock, t: 'Ubah Password', h: '/dashboard/change-password', a: 0, c: ['user', 'panitia', 'admin'] },
-        { i: LuBookOpen, t: 'Documentation', h: '/dashboard/documentation', a: 0, c: ['panitia', 'admin'] },
+        // { i: LuBookOpen, t: 'Documentation', h: '/dashboard/documentation', a: 0, c: ['panitia', 'admin'] },
       ]
     },
   ]

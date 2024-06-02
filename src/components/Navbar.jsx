@@ -8,7 +8,7 @@ import { LuAlignRight } from 'react-icons/lu';
 const listNav = [
   { t: 'Beranda', h: '/' },
   { t: 'Events', h: '/events' },
-  { t: 'Bantuan', h: '/#help' },
+  // { t: 'Bantuan', h: '/#help' },
 ]
 
 const Navbar = () => {

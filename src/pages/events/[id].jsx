@@ -22,7 +22,7 @@ const EventDetailPage = () => {
   let mulai = dayjs(Number(x.event_release)).format('DD MMMM');
   let selesai = dayjs(Number(x.event_finish)).format('DD MMMM');
   let share_pesan = `Ikuti event terbaru *${x.event_name}* yang fantastik! Akan di mulai pada *${mulai}* sampai dengan *${selesai}*. Jangan sampai ketinggalan! klik link dibawah untuk info lebih lanjut.`
-  let share_link = decodeURI(`https://eveer.vercel.app${path}`)
+  let share_link = decodeURI(`https://eveer-orpin.vercel.app${path}`)
 
   return (
     <>
