@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0e7ccf;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid #fff;
+  @apply bg-[#CCCCCC] rounded-full;
+}
+
+::-webkit-scrollbar {
+  @apply w-3.5;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  margin: 0;
+}
+
+* {
+  @apply box-border !appearance-none transition-all duration-200;
+}
+
+html,
+body {
+  @apply p-0 m-0 font-["Onest"] bg-white text-gray-700;
+}
+
+img,
+Image {
+  @apply select-none;
+}
+
+h1 {
+  @apply text-[--primary-color];
+}
+
+@layer components {
+  .border {
+    @apply border-[--primary-color];
+  }
+
+  .border-back {
+    @apply border !border-gray-300;
+  }
+
+  .bg-primary {
+    @apply bg-[--primary-color] text-white;
+  }
+
+  .button {
+    @apply px-5 py-1 bg-primary rounded-xl border w-fit text-[15px] cursor-pointer;
+  }
+
+  .button-border {
+    @apply px-5 py-1 rounded-xl border w-fit text-[15px] cursor-pointer;
+  }
+
+  input {
+    @apply border rounded-xl px-5 py-1 w-full placeholder:text-[15px] !outline-none;
+  }
+
+  input.small {
+    @apply border rounded-xl px-3 py-1 w-full placeholder:text-[15px] !outline-none;
+  }
+
+  select.small {
+    @apply border rounded-xl text-center px-3 py-1 w-full placeholder:text-[15px] !outline-none;
+  }
+
+  select[disabled] {
+    @apply bg-gray-200;
+  }
+
+  input[disabled] {
+    @apply bg-gray-200;
+  }
+
+  button[disabled] {
+    @apply opacity-50 cursor-auto;
+  }
+
+  .input-body {
+    @apply flex flex-col gap-2 w-full;
+
+    & > label {
+      @apply text-[13px] font-medium;
+    }
+    & > input {
+      @apply px-3 py-1 text-sm !border-back;
+    }
+    & > select {
+      @apply px-3 py-1 text-sm bg-transparent !border-back rounded-xl resize-none outline-none;
+    }
+    & > .input-auto {
+      @apply px-3 py-1 text-sm !border-back rounded-xl resize-none outline-none;
+    }
+  }
+}
+
+.swagger-ui * {
+  @apply !font-[Onest] !transition-all !duration-200;
+}
