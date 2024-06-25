@@ -57,7 +57,7 @@ const EventsPage = () => {
         .from("thumbnails")
         .upload(keygen.url(20), e.target.files[0])
       if (data.path) {
-        cache.set('thm_image', `https://lzxtpnjdrtpzaozfzjqm.supabase.co/storage/v1/object/public/thumbnails/${data.path}`)
+        cache.set('thm_image', `https://hfehlqciukbtwwsnxuqy.supabase.co/storage/v1/object/public/thumbnails/${data.path}`)
         cache.set('upl_image', false)
       }
     }
