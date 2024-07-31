@@ -1,6 +1,6 @@
 {
   "swagger": "2.0",
-  "host": "eveer.vercel.app",
+  "host": "eveer-orpin.vercel.app",
   "basePath": "/api/signal",
   "tags": [
     {
